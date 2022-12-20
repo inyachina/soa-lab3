@@ -9,7 +9,7 @@
         <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
-    <root id="archive" name="additional-service.war">
+    <root id="archive" name="spring-boot.war">
       <element id="artifact" artifact-name="spring-boot:war exploded" />
     </root>
   </artifact>

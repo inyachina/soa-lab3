@@ -2,17 +2,22 @@ package soa.lab.contoller;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("bars/api/v1/")
+@RequestMapping("bars/api/v1")
 @AllArgsConstructor
 public class LabsController {
-//    private SecondService secondService;
+    //    private SecondService secondService;
 //
 //
+    @GetMapping("/test")
+    public String test() {
+        return "333";
+    }
 //    @GetMapping("/disciplines/{discipline-id}/get-hardcore")
 //    private ResponseEntity getHardcore(@PathVariable(name = "discipline-id") Integer disciplineId) {
 //        List<Lab> labs = this.secondService.getHardcoreLabs(disciplineId);
