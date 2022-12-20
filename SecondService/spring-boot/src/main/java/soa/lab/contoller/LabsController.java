@@ -16,7 +16,7 @@ public class LabsController {
 //
     @GetMapping("/test")
     public String test() {
-        return "333";
+        return "313";
     }
 //    @GetMapping("/disciplines/{discipline-id}/get-hardcore")
 //    private ResponseEntity getHardcore(@PathVariable(name = "discipline-id") Integer disciplineId) {
