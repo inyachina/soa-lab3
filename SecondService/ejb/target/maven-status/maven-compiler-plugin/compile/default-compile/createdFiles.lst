@@ -1,0 +1,13 @@
+soa\lab\service\CallingServiceImpl.class
+soa\lab\exception\DecreaseDifficultyException.class
+soa\lab\model\Discipline.class
+soa\lab\exception\NotFoundException.class
+soa\lab\service\SecondServiceImpl.class
+soa\lab\service\CallingService.class
+soa\lab\exception\ApiException.class
+soa\lab\model\Lab$LabBuilder.class
+soa\lab\model\Difficulty.class
+soa\lab\service\SecondService.class
+soa\lab\exception\BadRequestException.class
+soa\lab\model\Discipline$DisciplineBuilder.class
+soa\lab\model\Lab.class
