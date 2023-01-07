@@ -27,7 +27,7 @@ target/
 /.nb-gradle/
 build/
 out/
-src/main/resources
+src/main/resources/static
 src/main/webapp
 !**/src/main/**/build/
 !**/src/test/**/build/

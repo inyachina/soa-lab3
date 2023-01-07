@@ -1,0 +1,27 @@
+server:
+  port: 41589
+
+spring:
+  application:
+    name: main-soa
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 123
+    url: jdbc:postgresql://localhost/soa
+  jpa:
+    generate-ddl: true
+
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      config:
+        enabled: true
+        import-check:
+          enabled: false
+      discovery:
+        healthCheckPath: /ping
+        healthCheckInterval: 20s
+        enabled: true
+        instanceId: ${spring.application.name}:${random.value}
