@@ -1,6 +1,7 @@
 package soa.lab.service;
 
 import lombok.extern.slf4j.Slf4j;
+import org.jboss.ejb3.annotation.Pool;
 
 import javax.ejb.Stateless;
 import javax.ws.rs.client.Client;
@@ -10,6 +11,7 @@ import javax.ws.rs.core.MediaType;
 
 @Slf4j
 @Stateless
+@Pool("slsb-strict-max-pool")
 public class CallingServiceImpl implements CallingService {
     private final String URL = "http://localhost:41579/api/v1";
     private Client client;

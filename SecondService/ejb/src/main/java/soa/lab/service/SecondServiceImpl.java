@@ -1,5 +1,6 @@
 package soa.lab.service;
 
+import org.jboss.ejb3.annotation.Pool;
 import soa.lab.exception.ApiException;
 import soa.lab.exception.DecreaseDifficultyException;
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +16,7 @@ import java.util.stream.Stream;
 
 @Slf4j
 @Stateless
+@Pool("slsb-strict-max-pool")
 public class SecondServiceImpl implements SecondService {
     @EJB
     private CallingService callingService;
